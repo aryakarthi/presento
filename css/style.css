@@ -5,9 +5,9 @@
   --font-color-444: #444444;
 }
 
-h1{
+/* h1{
   color: var(--primary-color);
-}
+} */
 
 header{
   background-color: var(--secondary-color);
@@ -27,16 +27,38 @@ header{
   height: 40px;
 }
 
+#banner_id{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .banner-section{
-  background-color: var(--primary-color);
-  color: #e26365;
   height: calc(100vh - 60px);
   padding: 150px 0;
 }
 
-.banner-content{
-  background-color: var(--secondary-color);
-  height: 300px;
+/* .banner-content{
+  padding: 30px;
+} */
+
+.banner-content h1{
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.banner-content h2{
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.banner-content .btn-danger{
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 36px;
 }
 
 
@@ -105,17 +127,68 @@ header{
 
 
 .about-us-section{
-  background-color: var(--primary-color);
+  /* background-color: #fff; */
   padding: 100px 0;
+  position: relative;
+
 }
 
-.about-left , .about-right{
+.about-us-section::before{
+  content: "";
   background-color: var(--secondary-color);
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  transform: skew(0,-3deg);
+  z-index: -20;
 }
+
+/* .about-left , .about-right{
+  background-color: var(--secondary-color);
+} */
 
 .about-left{
-  background-color: var(--secondary-color);
-  min-height: 400px;
+  /* background-color: var(--secondary-color); */
+  padding: 30px 30px 30px 0;
+  /* min-height: 400px; */
+}
+
+.about-left h3{
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-left p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.about-left .about-us-btn{
+    padding: 8px 30px 9px 30px;
+    color: #fff;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+}
+
+.about-left .about-us-btn:hover{
+  background-color: var(--primary-color);
+}
+
+.about-left .about-us-btn span{
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
 }
 
 .about-right{
@@ -123,8 +196,25 @@ header{
 }
 
 .about-box{
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   height: 160px;
+}
+
+.about-box .las{
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.about-box h4{
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.about-box p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
 }
 
 
