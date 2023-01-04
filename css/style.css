@@ -5,9 +5,6 @@
   --font-color-444: #444444;
 }
 
-/* h1{
-  color: var(--primary-color);
-} */
 
 header{
   background-color: var(--secondary-color);
@@ -39,9 +36,6 @@ header{
   padding: 150px 0;
 }
 
-/* .banner-content{
-  padding: 30px;
-} */
 
 .banner-content h1{
   font-size: 48px;
@@ -62,8 +56,33 @@ header{
 }
 
 
+
+
+.banner-content .get-started-btn{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 36px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: var(--primary-color);
+}
+
+.banner-content .get-started-btn:hover{
+  background-color: var(--primary-color);
+}
+
+.banner-content .get-started-btn span{
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+
+
+
+
 .client-logo-section{
-  /* background-color: var(--secondary-color); */
   height: 220px;
   padding: 50px 0;
 }
@@ -105,29 +124,9 @@ header{
   background-color: var(--primary-color);
 }
 
-/* #lilly-logo{
-    background-image: url("../img/clients/client-4.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
-    filter: grayscale(100%);
-}
-
-#lilly-logo:hover{
-  opacity: 1;
-  filter: none;
-} */
-
-/* .client-dots{
-  background-color: var(--primary-color);
-  height: 50px;
-  margin-top: 20px;
-} */
 
 
 .about-us-section{
-  /* background-color: #fff; */
   padding: 100px 0;
   position: relative;
 
@@ -145,14 +144,10 @@ header{
   z-index: -20;
 }
 
-/* .about-left , .about-right{
-  background-color: var(--secondary-color);
-} */
+
 
 .about-left{
-  /* background-color: var(--secondary-color); */
   padding: 30px 30px 30px 0;
-  /* min-height: 400px; */
 }
 
 .about-left h3{
@@ -195,7 +190,6 @@ header{
 }
 
 .about-box{
-  /* background-color: var(--primary-color); */
   height: 160px;
 }
 
@@ -219,7 +213,6 @@ header{
 
 
 .dashboard-section{
-  /* background-color: var(--secondary-color); */
   padding: 100px 0;
 }
 
@@ -278,7 +271,6 @@ header{
 }
 
 .services-section{
-  /* background-color: var(--secondary-color); */
   padding: 150px 0;
   position: relative;
 }
@@ -412,9 +404,14 @@ header{
 }
 
 .portfolio-box{
-  background-color: var(--secondary-color);
   height: 300px;
   margin-top: 20px;
+
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background: rgba(17, 17, 17, 0.6);
 }
 
 .portfolio-box img{
@@ -422,6 +419,58 @@ header{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio-box .port-info{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.port-info h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.port-info p{
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.port-links a{
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px 0 0;
+  font-size: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.portfolio-box:hover .port-info{
+	opacity: 1;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+.portfolio-box:hover img{
+	transform: scale(1.2);
+}
+
+.port-links a:hover{
+  color: #fff;
 }
 
 
@@ -457,18 +506,6 @@ header{
   font-weight: 400;
   color: var(--font-color-444);
 }
-
-/* .testimonials-box{
-  background-color: var(--primary-color);
-  height: 300px;
-  margin-top: 20px;
-}
-
-.testimonials-dots{
-  background-color: var(--primary-color);
-  height: 50px;
-  margin-top: 20px;
-} */
 
 
 
@@ -660,16 +697,11 @@ header{
 
 
 
-
-
-
 .faq-section{
-  /* background-color: var(--secondary-color); */
   padding: 80px 0;
 }
 
 .faq-title{
-  /* background-color: var(--primary-color); */
   height: 100px;
 }
 
@@ -693,13 +725,23 @@ header{
 
 .faq-content{
   background-color: var(--primary-color);
-  /* height: 400px; */
   margin-top: 20px;
+}
+
+.accordion-button{
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.accordion-body{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
 .team-section{
-  /* background-color: var(--primary-color); */
   padding: 150px 0;
   position: relative;
 }
@@ -716,14 +758,8 @@ header{
   z-index: -20;
 }
 
-/* .team-title{
-  background-color: var(--secondary-color);
-  height: 100px;
-} */
-
 
 .team-title{
-  /* background-color: var(--secondary-color); */
   padding: 30px;
 }
 
@@ -753,14 +789,8 @@ header{
 
 
 .team-box{
-  background-color: var(--secondary-color);
-  /* height: 350px; */
   margin-top: 20px;
 }
-
-
-
-
 
 .person-img{
   width: 100%;
@@ -777,12 +807,10 @@ header{
 .social-media{
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 30px;
   right: 0;
-  padding: 16px 0;
   opacity: 0;
-  transition: ease 0.3s;
-  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -790,25 +818,21 @@ header{
 
 .social-media a{
   text-decoration: none;
-  color: var(--secondary-color);
-  margin: 0 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
+  margin: 0 3px;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out ;
+  color: #fff;
 }
 
 .social-media i{
   font-size: 18px;
 }
 
-.social-media a:hover{
-  color: var(--primary-color);
-}
-
-.team-items:hover .social-media{
-  opacity: 1;
-}
 
 .person-info{
   padding: 16px;
@@ -828,6 +852,15 @@ header{
   color: var(--secondary-color);
 }
 
+.team-box:hover .social-media{
+  opacity: 1;
+  bottom: 16px;
+}
+
+.social-media a:hover{
+  color: #fff;
+  background-color: #1b1b1b;
+}
 
 
 
@@ -835,13 +868,10 @@ header{
 
 
 .contact-section{
-  background-color: var(--secondary-color);
   padding: 80px 0;
 }
 
 .contact-title{
-  background-color: var(--primary-color);
-  /* height: 100px; */
   padding: 30px;
 }
 
@@ -849,7 +879,7 @@ header{
 .contact-title h2{
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: #444;
   position: relative;
 }
 
@@ -867,20 +897,22 @@ header{
 .contact-title p{
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: #444;
 }
 
 
 .contact-left , .contact-right{
-  background-color: var(--primary-color);
   padding: 20px;
   margin-top: 20px;
 }
 
+.contact-right{
+  padding: 20px;
+}
+
 .contact-address , .contact-email-us , .contact-call-us{
-  background-color: var(--secondary-color);
-  height: 150px;
-  margin-top: 20px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   
 }
 
@@ -888,10 +920,10 @@ header{
 
 
 .contact-icon{
-	width: 50px;
-	height: 50px;
+	width: 48px;
+	height: 48px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 48px;
 	border-radius: 50%;
 	border: 1px dotted var(--primary-color);
 }
@@ -903,27 +935,49 @@ header{
 
 .contact-content h3{
 	font-size: 20px;
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .contact-content p{
 	font-size: 14px;
-    line-height: 24px;
+  line-height: 24px;
 }
 
 
 
 
 .contact-name , .contact-email , .contact-sub, .contact-send-msg{
-  background-color: var(--secondary-color);
   height: 50px;
   margin-top: 20px;
 }
 
 .contact-msg{
-  background-color: var(--secondary-color);
   height: 110px;
   margin-top: 20px;
+}
+
+
+
+.contact-name input, .contact-email input, .contact-sub input, .contact-msg textarea{
+  width: 100%;
+  height: 100%;
+
+}
+
+.contact-send-msg{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.contact-send-msg button{
+	background-color: var(--primary-color);
+  border: none;
+	border-radius: 4px;
+	padding: 14px 28px;
+	font-size: 16px;
+	color: #fff;
 }
 
 
