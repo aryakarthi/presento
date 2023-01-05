@@ -6,7 +6,7 @@
 }
 
 
-header{
+/* header{
   background-color: var(--secondary-color);
   height: 60px;
   padding: 5px 0;
@@ -22,7 +22,39 @@ header{
 .nav-links , .get-started , .ham-menu{
   background-color: var(--secondary-color);
   height: 40px;
+} */
+
+header{
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
 }
+
+
+.navbar-brand{
+  font-size: 30px;
+  font-weight: 600;
+  color:#111111
+}
+
+.navbar-brand .dot-color{
+  color: var(--primary-color);
+}
+
+.nav-link{
+  font-size: 16px;
+  font-weight: 600;
+  color:#111111
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
+  color: var(--primary-color);
+}
+
+
+
 
 #banner_id{
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/hero-bg.jpg");
@@ -299,6 +331,25 @@ header{
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
   background-color: var(--primary-color);
+}
+
+.tab-left h3{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.tab-left p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tab-left ul li{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tab-left ul li i{
+  color: var(--primary-color);
 }
 
 
