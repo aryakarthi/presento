@@ -1,8 +1,10 @@
 :root{
-  --primary-color: #660099;
+  /* --primary-color: #660099; */
+  --primary-color: #e03a3c;
   --secondary-color: #1b1b1b;
   --bg-color: #e26365;
   --font-color-444: #444444;
+  --primary-crimson: #e03a3c;
 }
 
 
@@ -302,7 +304,7 @@ header{
   margin-top: 20px;
 }
 
-
+/* tab-starts */
 
 .tabs-section{
   padding: 60px 0;
@@ -315,6 +317,10 @@ header{
   color: #111111;
   display: flex;
   align-items: center;
+}
+
+.nav-pills .nav-link:hover{
+  color: var(--primary-color);
 }
 
 .nav-pills .nav-link i{
@@ -352,7 +358,7 @@ header{
   color: var(--primary-color);
 }
 
-
+/* tab ends */
 
 .services-section{
   padding: 150px 0;
@@ -632,7 +638,7 @@ header{
 .test-client-review .fa-quote-left , .test-client-review .fa-quote-right{
   display: inline-block;
   font-size: 24px;
-  color: rgba(180, 90, 230, 0.5);
+  color: #d67071;
 }
 
 .test-client-review .fa-quote-left{
