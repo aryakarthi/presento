@@ -13,6 +13,8 @@
   <title>Presento - Layout</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary" tabindex="0">
+
+
 <header>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -26,7 +28,7 @@
 
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-1">
           <!-- me-auto -->
           <li class="nav-item">
             <a class="nav-link raleway active" aria-current="page" href="#">Home</a>
@@ -53,7 +55,6 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item raleway" href="#">Drop Down 1</a></li>
               <li><a class="dropdown-item raleway" href="#">Deep Drop Down</a></li>
-              <!-- <li><hr class="dropdown-divider"></li> -->
               <li><a class="dropdown-item raleway" href="#">Drop Down 3</a></li>
               <li><a class="dropdown-item raleway" href="#">Drop Down 4</a></li>
               <li><a class="dropdown-item raleway" href="#">Drop Down 5</a></li>
@@ -69,44 +70,11 @@
         <span class="raleway">Get Started</span>
       </a>
     </div>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
       </div>
     </div>
   </nav>
 
 </header>
-
-  <!-- <header>
-    <div class="container">
-      <div class="row justify-content-between">
-          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5 col-5">
-            <div class="logo"></div>
-          </div>
-          <div class="col-xl-8 col-lg-10 col-md-4 col-sm-5 col-5">
-            <div class="nav-bar">
-              <div class="row justify-content-around justify-content-lg-around justify-content-md-end justify-content-sm-end">
-                <div class="col-xl-10 col-lg-9 d-xl-block d-lg-block d-md-none d-sm-none d-none">
-                  <div class="nav-links"></div>
-                </div>
-                <div class="col-xl-2 col-lg-2 col-md-8 col-sm-8 col-8">
-                  <div class="get-started">
-                    
-                  </div>
-                </div>
-                <div class="d-xl-none d-lg-none col-md-4 col-sm-4 col-4">
-                    <div class="ham-menu">
-                      
-                    </div>
-                  </div>
-            </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </header> -->
 
 <section class="banner-section" id="banner_id">
     <div class="container">
@@ -308,27 +276,27 @@
 <section class="tabs-section" id="tabs_id">
     <div class="container">
         
-        <ul class="row nav  nav-pills nav-fill" role="tablist">
+        <ul class="row nav nav-pills nav-fill" role="tablist">
             <li class="nav-item col-3" role="presentation">
-                <a href="#" class="nav-link justify-content-center gap-2 active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab-1"  role="tab" aria-controls="tab-1" aria-selected="true">
+                <a class="nav-link active justify-content-center gap-2" id="home-tab" data-bs-toggle="tab" data-bs-target="#tab-1"  role="tab" aria-controls="tab-1" aria-selected="true">
                     <i class="las la-podcast"></i>
                     <h4 class="raleway d-lg-block d-none">Modi sit est dela pireda nest</h4>
                 </a>
             </li>
             <li class="nav-item col-3" role="presentation">
-                <a href="" class="nav-link justify-content-center gap-2" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab-2"  role="tab" aria-controls="tab-2" aria-selected="false">
+                <a class="nav-link justify-content-center gap-2" id="profile-tab" data-bs-toggle="tab" data-bs-target="#tab-2"  role="tab" aria-controls="tab-2" aria-selected="false">
                     <i class="las la-user-circle"></i>
                     <h4 class="raleway d-lg-block d-none">Unde praesenti mara setra le</h4>
                 </a>
             </li>
             <li class="nav-item col-3" role="presentation">
-                <a href="" class="nav-link justify-content-center gap-2" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab-3"  role="tab" aria-controls="tab-3" aria-selected="false">
+                <a class="nav-link justify-content-center gap-2" id="messages-tab" data-bs-toggle="tab" data-bs-target="#tab-3"  role="tab" aria-controls="tab-3" aria-selected="false">
                     <i class="las la-sun"></i>
                     <h4 class="raleway d-lg-block d-none">Pariatur explica nitro dela</h4>
                 </a>     
             </li>
             <li class="nav-item col-3" role="presentation">
-                <a href="" class="nav-link justify-content-center gap-2" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab-4"  role="tab" aria-controls="tab-4" aria-selected="false">
+                <a class="nav-link justify-content-center gap-2" id="settings-tab" data-bs-toggle="tab" data-bs-target="#tab-4"  role="tab" aria-controls="tab-4" aria-selected="false">
                     <i class="las la-store"></i>
                     <h4 class="raleway d-lg-block d-none">Nostrum qui dile node</h4>
                 </a>
@@ -339,14 +307,14 @@
  
         <div class="tab-content mt-4">
 
-            <div class="tab-pane active" id="tab-1" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                <div class="row">
-                    <div class="col-12 col-lg-6 order-md-1">
-                      <div class="tab-left">
-                        <h3>
+            <div class="tab-pane active show" id="tab-1" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-6">
+                      <div class="tab-left open-sans">
+                        <h3 class="raleway">
                             Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
                         </h3>
-                        <p>
+                        <p class="fst-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <ul class="list-unstyled">
@@ -368,8 +336,8 @@
                       </p>
                       </div>
                     </div>
-                    <div class="col-12 col-lg-6 order-md-2">
-                      <div class="tab-right">
+                    <div class="col-12 col-lg-6">
+                      <div class="tab-right mb-2">
                         <img
                           src="./img/tabs-1.jpg"
                           class="w-100 d-block img-fluid"
@@ -380,17 +348,17 @@
                   </div>
             </div>
 
-            <div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
-                <div class="row">
-                    <div class="col-12 col-lg-6 order-md-1">
-                      <div class="tab-left">
-                        <h3>
+            <div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-6">
+                      <div class="tab-left open-sans">
+                        <h3 class="raleway">
                             Neque exercitationem debitis soluta quos debitis quo mollitia officia est
                         </h3>
                         <p>
                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                         </p>
-                        <p>
+                        <p class="fst-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </p>
                         <ul class="list-unstyled">
@@ -416,8 +384,8 @@
                       </p>
                       </div>
                     </div>
-                    <div class="col-12 col-lg-6 order-md-2">
-                      <div class="tab-right">
+                    <div class="col-12 col-lg-6">
+                      <div class="tab-right mb-2">
                         <img
                           src="./img/tabs-2.jpg"
                           class="w-100 d-block img-fluid"
@@ -428,11 +396,11 @@
                   </div>
             </div>
 
-            <div class="tab-pane" id="tab-3" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
-                <div class="row">
-                    <div class="col-12 col-lg-6 order-md-1">
-                      <div class="tab-left">
-                        <h3>
+            <div class="tab-pane" id="tab-3" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-6">
+                      <div class="tab-left open-sans">
+                        <h3 class="raleway">
                             Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda
                         </h3>
                         <p>
@@ -452,13 +420,13 @@
                             Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.
                           </li>
                         </ul>
-                        <p>
+                        <p class="fst-italic">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                       </p>
                       </div>
                     </div>
-                    <div class="col-12 col-lg-6 order-md-2">
-                      <div class="tab-right">
+                    <div class="col-12 col-lg-6">
+                      <div class="tab-right mb-2">
                         <img
                           src="./img/tabs-3.jpg"
                           class="w-100 d-block img-fluid"
@@ -469,12 +437,12 @@
                   </div>
             </div>
 
-            <div class="tab-pane" id="tab-4" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="tab-pane" id="tab-4" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
  
-                <div class="row">
-                  <div class="col-12 col-lg-6 order-md-1">
-                    <div class="tab-left">
-                      <h3>
+                <div class="row flex-column-reverse flex-lg-row">
+                  <div class="col-12 col-lg-6">
+                    <div class="tab-left open-sans">
+                      <h3 class="raleway">
                         Omnis fugiat ea explicabo sunt dolorum asperiores sequi
                         inventore rerum
                       </h3>
@@ -485,7 +453,7 @@
                         occaecat cupidatat non proident, sunt in culpa qui officia
                         deserunt mollit anim id est laborum
                       </p>
-                      <p>
+                      <p class="fst-italic">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor incididunt ut labore et dolore magna
                         aliqua.
@@ -511,10 +479,10 @@
                     </p>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-6 order-md-2">
-                    <div class="tab-right">
+                  <div class="col-12 col-lg-6">
+                    <div class="tab-right mb-2">
                       <img
-                        src="./img/tabs-1.jpg"
+                        src="./img/tabs-4.jpg"
                         class="w-100 d-block img-fluid"
                         alt=""
                       />
@@ -795,38 +763,6 @@
       </div>
   </div>
 </section>
-
-<!-- <section class="testimonials-section">
-  <div class="container">
-      <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="testimonials-title">
-
-              </div>
-          </div>
-          <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
-              <div class="testimonials-box">
-
-              </div>
-          </div>
-          <div class="col-xl-4 d-xl-block d-lg-none d-md-none d-sm-none d-none">
-              <div class="testimonials-box">
-
-              </div>
-          </div>
-          <div class="col-xl-4 d-xl-block d-lg-none d-md-none d-sm-none d-none">
-              <div class="testimonials-box">
-
-              </div>
-          </div>
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-            <div class="testimonials-dots">
-
-            </div>
-          </div>
-      </div>
-  </div>
-</section> -->
 
 <section class="testimonials-section" id="testimonials_id">
     <div class="container">
@@ -1176,8 +1112,8 @@
                     </div>
                 </div>
                 <div class="person-info">
-                    <h4 class="raleway">Walter White</h4>
-                    <p class="open-sans">Chief Executive Officer</p>
+                    <h4 class="raleway">Sarah Jhonson</h4>
+                    <p class="open-sans">Product Manager</p>
                 </div>
               </div>
           </div>
@@ -1193,8 +1129,8 @@
                     </div>
                 </div>
                 <div class="person-info">
-                    <h4 class="raleway">Walter White</h4>
-                    <p class="open-sans">Chief Executive Officer</p>
+                    <h4 class="raleway">William Anderson</h4>
+                    <p class="open-sans">CTO</p>
                 </div>
               </div>
           </div>
@@ -1210,8 +1146,8 @@
                     </div>
                 </div>
                 <div class="person-info">
-                    <h4 class="raleway">Walter White</h4>
-                    <p class="open-sans">Chief Executive Officer</p>
+                    <h4 class="raleway">Amanda Jepson</h4>
+                    <p class="open-sans">Accountant</p>
                 </div>
               </div>
         </div>
@@ -1270,27 +1206,27 @@
           <div class="col-lg-6 col-md-12 col-sm-12 col-12">
               <div class="contact-right">
                 <div class="row g-3">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-6 mt-0">
                       <div class="contact-name">
                         <input type="text" class="name-in in-focus open-sans xs-in-width sm-in-width" placeholder="Your Name">
                       </div>
                   </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-6 mt-0">
                     <div class="contact-email">
                         <input type="email" class="email-in in-focus open-sans xs-in-width sm-in-width" placeholder="Your Email">
                     </div>
                 </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-0">
                       <div class="contact-sub">
                         <input type="text" class="subject in-focus open-sans xs-in-mt sm-in-mt"  placeholder="Subject">
                       </div>
                   </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-0">
                       <div class="contact-msg">
                         <textarea id="msg" name="msg" class="message in-focus open-sans xs-txt-mt sm-txt-mt" placeholder="Message" cols="5" rows="4"></textarea>
                       </div>
                   </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-0">
                     <div class="contact-send-msg">
                         <button class="open-sans">Send Message</button>
                     </div>
@@ -1306,8 +1242,8 @@
   <div class="container">
       <div class="row g-lg-3 g-md-3 g-sm-3 g-3">
           <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-              <div class="footer-box address-info">
-                <h3>Presento</h3>
+              <div class="footer-box address-info raleway">
+                <h3>Presento<span class="dot-color">.</span></h3>
                 <address>A108 Adam Street<br>New York, 535022, USA</address>
                 <div class="contacts">
                     <p><span>Phone: </span>+1 5589 55488 55</p>
@@ -1319,11 +1255,11 @@
               <div class="footer-box">
                 <h4 class="raleway">Useful Links</h4>
                     <ul class="open-sans">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Home</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">About Us</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Services</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Terms of Service</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Privacy Policy</a></li>
                     </ul>
               </div>
           </div>
@@ -1331,11 +1267,11 @@
               <div class="footer-box">
                 <h4 class="raleway">Our Services</h4>
                     <ul class="open-sans">
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Web Design</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Web Development</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Product Management</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Marketing</a></li>
+                        <li><i class="fa-solid fa-chevron-right"></i><a href="#">Graphic Design</a></li>
                     </ul>
               </div>
           </div>
@@ -1355,13 +1291,15 @@
 <section class="copy-social-section" id="copy-social_id">
   <div class="container">
     <div class="row justify-content-lg-between flex-md-row flex-sm-column align-items-sm-center flex-column align-items-center g-lg-3 g-md-3 g-sm-3 g-3">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6">
-          <div class="designed-by-box">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="designed-by-box text-md-start text-center">
             <p>Designed by<a href="#"> Ariya Perumal. M</a></p>
           </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-6">
-          <div class="social-logo-box">
+    <!-- </div>
+    <div class="row justify-content-md-end justify-content-center"> -->
+      <div class="col-lg-6 col-md-6 col-sm-12 col-12 mx-auto">
+          <div class="social-logo-box justify-content-md-end justify-content-center">
             <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
             <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
             <span><i class="fa fa-instagram" aria-hidden="true"></i></span>

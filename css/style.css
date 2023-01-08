@@ -1,61 +1,45 @@
 :root{
-  /* --primary-color: #660099; */
   --primary-color: #e03a3c;
   --secondary-color: #1b1b1b;
-  --bg-color: #e26365;
-  --font-color-444: #444444;
-  --primary-crimson: #e03a3c;
+  --color-hover: #ff6f71;
+  --color-111: #111111;
+  --color-444: #444444;
+  --color-aaa: #aaaaaa;
+  --white: #fff;
 }
 
-
-/* header{
-  background-color: var(--secondary-color);
-  height: 60px;
-  padding: 5px 0;
-
+body{
+  background-color: var(--white);
 }
-
-.logo , .nav-bar{
-  background-color: var(--primary-color);
-  height: 50px;
-  padding: 5px;
-}
-
-.nav-links , .get-started , .ham-menu{
-  background-color: var(--secondary-color);
-  height: 40px;
-} */
 
 header{
-  position: sticky;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 999;
+  background-color: var(--white);
 }
 
-
-.navbar-brand{
-  font-size: 30px;
-  font-weight: 600;
-  color:#111111
+.get-started-nav{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background-color: var(--primary-color);
 }
 
-.navbar-brand .dot-color{
-  color: var(--primary-color);
-}
-
-.nav-link{
+.get-started-nav span{
   font-size: 16px;
-  font-weight: 600;
-  color:#111111
+  font-weight: 500;
+  color: #fff;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
-  color: var(--primary-color);
+.get-started-nav:hover{
+  background-color: var(--color-hover);
 }
-
-
 
 
 #banner_id{
@@ -66,7 +50,7 @@ header{
 }
 
 .banner-section{
-  height: calc(100vh - 60px);
+  height: 100vh;
   padding: 150px 0;
 }
 
@@ -102,23 +86,21 @@ header{
   background-color: var(--primary-color);
 }
 
-.banner-content .get-started-btn:hover{
-  background-color: var(--primary-color);
-}
-
 .banner-content .get-started-btn span{
   font-size: 16px;
   font-weight: 500;
   color: #fff;
 }
 
-
-
+.banner-content .get-started-btn:hover{
+  background-color: var(--color-hover);
+}
 
 
 .client-logo-section{
   height: 220px;
   padding: 50px 0;
+  background-color: #fff;
 }
 
 .client-logo-box{
@@ -181,7 +163,7 @@ header{
 
 
 .about-left{
-  padding: 30px 30px 30px 0;
+  padding: 30px 0;
 }
 
 .about-left h3{
@@ -247,7 +229,7 @@ header{
 
 
 .dashboard-section{
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .dash-box{
@@ -319,24 +301,29 @@ header{
   align-items: center;
 }
 
+/* .nav-pills .nav-link.active {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  border-color: var(--primary-color) !important;
+} */
+
+ #tabs_id .nav-pills .nav-link.active, #tabs_id .nav-pills .show>.nav-link {
+  color: var(--white) !important;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
 .nav-pills .nav-link:hover{
   color: var(--primary-color);
 }
 
 .nav-pills .nav-link i{
-  /* padding-right: 16px; */
   font-size: 48px;
 }
 
 .nav-pills .nav-link h4{
   font-size: 18px;
   font-weight: 600;
-  /* color: #111111; */
-}
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  color: #fff;
-  background-color: var(--primary-color);
 }
 
 .tab-left h3{
@@ -352,6 +339,7 @@ header{
 .tab-left ul li{
   font-size: 16px;
   font-weight: 400;
+  padding-bottom: 10px;
 }
 
 .tab-left ul li i{
@@ -408,7 +396,7 @@ header{
 
 .services-box{
   background-color: #252525;
-  height: 150px;
+  min-height: 150px;
   display: flex;
   gap: 30px;
   padding: 30px;
@@ -489,6 +477,11 @@ header{
 }
 
 .port-filter li.filter-active{
+  background-color: #e03a3c;
+  color: #fff;
+}
+
+.port-filter li:hover{
   background-color: #e03a3c;
   color: #fff;
 }
@@ -576,7 +569,7 @@ header{
 .testimonials-title h2{
   font-size: 32px;
   font-weight: 700;
-  color: var(--font-color-444);
+  color: var(--color-444);
   position: relative;
 }
 
@@ -594,7 +587,7 @@ header{
 .testimonials-title p{
   font-size: 16px;
   font-weight: 400;
-  color: var(--font-color-444);
+  color: var(--color-444);
 }
 
 
@@ -745,7 +738,6 @@ header{
     padding: 16px 0;
     font-weight: 600;
     color: #fff;
-	/* margin-bottom: 16px; */
 }
 
 .plan-price sup{
@@ -880,6 +872,8 @@ header{
 
 .team-box{
   margin-top: 20px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .person-img{
@@ -925,7 +919,7 @@ header{
 
 
 .person-info{
-  padding: 16px;
+  padding: 24px 16px;
   background-color: #fff;
 }
 
@@ -939,7 +933,8 @@ header{
 .person-info p{
   font-size: 13px;
   font-weight: 400;
-  color: var(--secondary-color);
+  color: var(--color-aaa);
+  margin-bottom: unset;
 }
 
 .team-box:hover .social-media{
@@ -992,22 +987,22 @@ header{
 
 
 .contact-left , .contact-right{
-  padding: 20px;
   margin-top: 20px;
 }
 
 .contact-right{
-  padding: 20px;
+  padding: 30px;
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-address , .contact-email-us , .contact-call-us{
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  
+  background-color: #fff;
+  border-radius: 6px;
 }
-
-
-
 
 .contact-icon{
 	width: 48px;
@@ -1015,7 +1010,7 @@ header{
 	text-align: center;
 	line-height: 48px;
 	border-radius: 50%;
-	border: 1px dotted var(--primary-color);
+	border: 2px dotted var(--primary-color);
 }
 
 .contact-icon i{
@@ -1025,16 +1020,17 @@ header{
 
 .contact-content h3{
 	font-size: 20px;
+  font-weight: 700;
   margin-bottom: 16px;
+  color: var(--color-444);
 }
 
 .contact-content p{
 	font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
+  color: var(--color-444);
 }
-
-
-
 
 .contact-name , .contact-email , .contact-sub, .contact-send-msg{
   height: 50px;
@@ -1046,28 +1042,50 @@ header{
   margin-top: 20px;
 }
 
-
-
 .contact-name input, .contact-email input, .contact-sub input, .contact-msg textarea{
+  display: inline-block;
   width: 100%;
   height: 100%;
+  padding: 10px;
+  border: 1px solid #cfcfcf;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  /* margin-bottom: 16px; */
+  transition: all 0.3s ease;
+  outline: none;
+  resize: vertical;
+  overflow: auto;
+  border-radius: 5px;
 
+}
+
+.contact-msg textarea{
+  min-height: 100%;
+  max-height: 100px;
+}
+
+.contact-right input:focus, .contact-right textarea:focus{
+  border: 1px solid var(--color-444);
 }
 
 .contact-send-msg{
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin-top: 20px;
 }
 
 .contact-send-msg button{
 	background-color: var(--primary-color);
   border: none;
 	border-radius: 4px;
-	padding: 14px 28px;
+	padding: 12px 24px;
 	font-size: 16px;
 	color: #fff;
+  transition: all 0.3s ease;
+}
+
+.contact-send-msg button:hover{
+  background-color: var(--color-hover);
 }
 
 
@@ -1076,133 +1094,142 @@ header{
   padding: 50px 0;
 }
 
-/* .footer-box{
-  height: 300px;
-} */
-
-
-
-
-
-
-.footer-box h3{
-  font-size: 24px;
-}
 
 .footer-box h3, .footer-box h4{
-margin-bottom: 20px;
-color: #fff;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-box h3{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.footer-box h4{
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-box h4::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: -6px;
+  left: 0;
 }
 
 .footer-box p{
-font-size: 14px;
+  font-size: 14px;
 }
 
 .footer-box address{
-font-size: 14px;
-line-height: 20px;
-margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-box .contacts{
-line-height: 20px;
-margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 .contacts span{
-font-weight: 600;
+  font-weight: 600;
 }
 
 .contacts a{
-text-decoration: none;
+  text-decoration: none;
   color: #fff;
 }
 
 .contacts a:hover{
-color: var(--primary-color);
-}
-
-.footer-box ul{
-padding-left: 10px;
-list-style: none;
-}
-
-.footer-box ul li{
-font-size: 14px;
-margin-bottom: 20px;
-}
-
-.footer-box ul li::before {
-  content: "\003E";
-font-weight: 600;
-  padding-right: 8px;
   color: var(--primary-color);
 }
 
+.footer-box ul{
+  padding-left: 10px;
+  list-style: none;
+}
+
+.footer-box ul li{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+.footer-box ul li i{
+  color: var(--white);
+  font-size: 12px;
+  margin-right: 6px;
+}
+
 .footer-box ul li a{
-text-decoration: none;
-  color: #fff;
+  text-decoration: none;
+  color: var(--color-aaa);
+  transition: all 0.3s ease;
 }
 
 .footer-box ul li a:hover{
-color: var(--primary-color);
+  color: var(--white);
 }
 
 .address-info{
-  padding: 0 20px 20px 0;
   color: #fff;
 }
 
 .newsletter{
-  padding: 0 0 20px 20px;
   color: #fff;
 }
 
 .newsletter p{
-line-height: 20px;
-margin-bottom: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 
 .newsletter div{
-width: 100%;
-height: 40px;
+  width: 100%;
+  height: 40px;
   position: relative;
 }
 
 .newsletter input{
-width: 70%;
-height: 100%;
+  width: 70%;
+  height: 100%;
   font-size: 16px;
-padding: 0 20px 0 10px;
-  border-radius: 20px 0 0 20px;
-border: 1px solid lightgray;
+  padding: 0 20px 0 10px;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid lightgray;
 }
 
 
 .newsletter input:focus{
-outline: none;
-box-shadow: none;
-border: 1px solid gray;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid gray;
 }
 
 .newsletter button{
   position: absolute;
   right: 20px;
   top: 0;
-width: 30%;
-height: 100%;
-/* border-radius: 0 20px 20px 0; */
-  border-radius: 20px;
-background-color: var(--primary-color);
-color: white;
-border: none;
+  width: 30%;
+  height: 100%;
+  border-radius: 0 6px 6px 0;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
   font-size: 16px;
   padding: 0 6px;
+  transition: all 0.3s ease;
 }
 
 .newsletter button:hover{
-background-color: #28989e;
-cursor: pointer;
+  background-color: var(--color-hover);
+  cursor: pointer;
 }
 
 
@@ -1215,23 +1242,24 @@ cursor: pointer;
 }
 
 .designed-by-box , .social-logo-box{
-  /* background-color: var(--primary-color); */
   padding: 10px 0;
-  /* height: 40px; */
 }
 
 .designed-by-box p{
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 4px;
+  color: var(--white);
 }
 
 .designed-by-box p a{
+  font-size: 20px;
   text-decoration: none;
   color: var(--primary-color);
+  transition: all 0.3s ease;
 }
 
 .designed-by-box p a:hover{
-  color: #28989e
+  color: var(--color-hover);
 }
 
 
@@ -1249,9 +1277,11 @@ cursor: pointer;
 	height: 40px;
 	padding: 10px;
 	background-color: #1b1b1b;
-	border-radius: 50%;
+	border-radius: 6px;
   text-align: center;
   line-height: 1.2;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
 .social-logo-box span:hover{
