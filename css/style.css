@@ -23,7 +23,7 @@ header{
 
 .get-started-nav{
   display: inline-block;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   padding: 6px 16px;
   border-radius: 4px;
@@ -34,7 +34,7 @@ header{
 .get-started-nav span{
   font-size: 16px;
   font-weight: 500;
-  color: #fff;
+  color: var(--white);
 }
 
 .get-started-nav:hover{
@@ -51,20 +51,20 @@ header{
 
 .banner-section{
   height: 100vh;
-  padding: 150px 0;
+  /* padding: 150px 0; */
 }
 
 
 .banner-content h1{
   font-size: 48px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
 }
 
 .banner-content h2{
   font-size: 24px;
   font-weight: 500;
-  color: #fff;
+  color: var(--white);
 }
 
 .banner-content .btn-danger{
@@ -78,7 +78,7 @@ header{
 
 .banner-content .get-started-btn{
   display: inline-block;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   padding: 10px 36px;
   border-radius: 4px;
@@ -89,7 +89,7 @@ header{
 .banner-content .get-started-btn span{
   font-size: 16px;
   font-weight: 500;
-  color: #fff;
+  color: var(--white);
 }
 
 .banner-content .get-started-btn:hover{
@@ -100,7 +100,7 @@ header{
 .client-logo-section{
   height: 220px;
   padding: 50px 0;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .client-logo-box{
@@ -132,7 +132,7 @@ header{
   height: 10px;
   border-radius: 50%;
   border: 1px solid var(--primary-color);
-  background-color: #fff;
+  background-color: var(--white);
   opacity: 1;
 }
 
@@ -169,19 +169,19 @@ header{
 .about-left h3{
   font-size: 34px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
 }
 
 .about-left p{
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
 }
 
 .about-left .about-us-btn{
   display: inline-block;
   padding: 10px 30px;
-  color: #fff;
+  color: var(--white);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
@@ -198,7 +198,7 @@ header{
 .about-left .about-us-btn span{
   font-size: 13px;
   font-weight: 500;
-  color: #fff;
+  color: var(--white);
 }
 
 .about-right{
@@ -217,13 +217,13 @@ header{
 .about-box h4{
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
 }
 
 .about-box p{
   font-size: 15px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
 }
 
 
@@ -252,10 +252,10 @@ header{
   left: 50%;
   transform: translateX(-50%);
   font-size: 30px;
-  background-color: #fff;
+  background-color: var(--white);
   color: var(--primary-color);
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -263,7 +263,7 @@ header{
   display: inline-block;
   font-size: 36px;
   font-weight: 700;
-  color: #111111;
+  color: var(--color-111);
 }
 
 .dash-box p{
@@ -296,16 +296,10 @@ header{
   min-height: 100px;
   border: 1px solid var(--secondary-color);
   border-radius: unset;
-  color: #111111;
+  color: var(--color-111);
   display: flex;
   align-items: center;
 }
-
-/* .nav-pills .nav-link.active {
-  background-color: var(--primary-color) !important;
-  color: #fff !important;
-  border-color: var(--primary-color) !important;
-} */
 
  #tabs_id .nav-pills .nav-link.active, #tabs_id .nav-pills .show>.nav-link {
   color: var(--white) !important;
@@ -315,6 +309,7 @@ header{
 
 .nav-pills .nav-link:hover{
   color: var(--primary-color);
+  border-color: var(--color-aaa);
 }
 
 .nav-pills .nav-link i{
@@ -328,7 +323,7 @@ header{
 
 .tab-left h3{
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 700; 
 }
 
 .tab-left p{
@@ -373,7 +368,7 @@ header{
 .services-title h2{
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   position: relative;
 }
 
@@ -383,7 +378,7 @@ header{
     display: block;
     width: 50px;
     height: 3px;
-    background: #e03a3c;
+    background-color: var(--primary-color);
     bottom: -20px;
     left: calc(50% - 25px);
 }
@@ -391,12 +386,12 @@ header{
 .services-title p{
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
 }
 
 .services-box{
   background-color: #252525;
-  min-height: 150px;
+  height: 100%;
   display: flex;
   gap: 30px;
   padding: 30px;
@@ -418,13 +413,13 @@ header{
 
 .services-desc h4 a{
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
 }
 
 .services-desc p{
   font-size: 14px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
 }
 
 
@@ -441,7 +436,7 @@ header{
 .portfolio-title h2{
   font-size: 32px;
   font-weight: 700;
-  color: #444;
+  color: var(--color-444);
   position: relative;
 }
 
@@ -451,7 +446,7 @@ header{
     display: block;
     width: 50px;
     height: 3px;
-    background: #e03a3c;
+    background-color: var(--primary-color);
     bottom: -20px;
     left: calc(50% - 25px);
 }
@@ -459,7 +454,7 @@ header{
 .portfolio-title p{
   font-size: 16px;
   font-weight: 400;
-  color: #444;
+  color: var(--color-444);
 }
 
 .port-filter li{
@@ -469,7 +464,7 @@ header{
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--color-444);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -477,13 +472,13 @@ header{
 }
 
 .port-filter li.filter-active{
-  background-color: #e03a3c;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
 .port-filter li:hover{
-  background-color: #e03a3c;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--white);
 }
 
 .portfolio-box{
@@ -524,7 +519,7 @@ header{
 .port-info h4{
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: var(--white);
 }
 
 .port-info p{
@@ -553,7 +548,7 @@ header{
 }
 
 .port-links a:hover{
-  color: #fff;
+  color: var(--white);
 }
 
 
@@ -579,7 +574,7 @@ header{
     display: block;
     width: 50px;
     height: 3px;
-    background: #e03a3c;
+    background-color: var(--primary-color);
     bottom: -20px;
     left: calc(50% - 25px);
 }
@@ -631,7 +626,7 @@ header{
 .test-client-review .fa-quote-left , .test-client-review .fa-quote-right{
   display: inline-block;
   font-size: 24px;
-  color: #d67071;
+  color: #ee9c9d;
 }
 
 .test-client-review .fa-quote-left{
@@ -651,7 +646,7 @@ header{
   height: 10px;
   border-radius: 50%;
   border: 1px solid var(--primary-color);
-  background-color: #fff;
+  background-color: var(--white);
   opacity: 1;
 }
 
@@ -689,7 +684,7 @@ header{
 .pricing-title h2{
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   position: relative;
 }
 
@@ -707,7 +702,7 @@ header{
 .pricing-title p{
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
 }
 
 .pricing-box{
@@ -717,7 +712,7 @@ header{
   border-radius: 6px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  color: #fff;
+  color: var(--white);
 }
 
 .active-price{
@@ -725,7 +720,7 @@ header{
 }
 
 .pricing-box h4{
-  color: #fff;
+  color: var(--white);
 }
 
 .pricing-box p{
@@ -737,7 +732,7 @@ header{
     font-size: 36px;
     padding: 16px 0;
     font-weight: 600;
-    color: #fff;
+    color: var(--white);
 }
 
 .plan-price sup{
@@ -773,7 +768,7 @@ header{
 }
 
 .buy-now a:hover{
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
 }
 
 
@@ -790,7 +785,7 @@ header{
 .faq-title h2{
   font-size: 32px;
   font-weight: 700;
-  color: #444;
+  color: var(--color-444);
   position: relative;
 }
 
@@ -800,7 +795,7 @@ header{
     display: block;
     width: 50px;
     height: 3px;
-    background: #e03a3c;
+    background-color: var(--primary-color);
     bottom: -20px;
     left: calc(50% - 25px);
 }
@@ -848,7 +843,7 @@ header{
 .team-title h2{
   font-size: 32px;
   font-weight: 700;
-  color: #fff;
+  color: var(--white);
   position: relative;
 }
 
@@ -858,7 +853,7 @@ header{
     display: block;
     width: 50px;
     height: 3px;
-    background: #e03a3c;
+    background-color: var(--primary-color);
     bottom: -20px;
     left: calc(50% - 25px);
 }
@@ -866,7 +861,7 @@ header{
 .team-title p{
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: var(--white);
 }
 
 
@@ -910,7 +905,7 @@ header{
   text-align: center;
   background-color: var(--primary-color);
   transition: all 0.3s ease-in-out ;
-  color: #fff;
+  color: var(--white);
 }
 
 .social-media i{
@@ -920,7 +915,7 @@ header{
 
 .person-info{
   padding: 24px 16px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .person-info h4{
@@ -943,8 +938,8 @@ header{
 }
 
 .social-media a:hover{
-  color: #fff;
-  background-color: #1b1b1b;
+  color: var(--white);
+  background-color: var(--secondary-color);
 }
 
 
@@ -964,7 +959,7 @@ header{
 .contact-title h2{
   font-size: 32px;
   font-weight: 700;
-  color: #444;
+  color: var(--color-444);
   position: relative;
 }
 
@@ -974,7 +969,7 @@ header{
     display: block;
     width: 50px;
     height: 3px;
-    background: #e03a3c;
+    background-color: var(--primary-color);
     bottom: -20px;
     left: calc(50% - 25px);
 }
@@ -1000,7 +995,7 @@ header{
 .contact-address , .contact-email-us , .contact-call-us{
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 6px;
 }
 
@@ -1080,7 +1075,7 @@ header{
 	border-radius: 4px;
 	padding: 12px 24px;
 	font-size: 16px;
-	color: #fff;
+	color: var(--white);
   transition: all 0.3s ease;
 }
 
@@ -1090,14 +1085,14 @@ header{
 
 
 .footer-section{
-  background-color: #1b1b1b;
+  background-color: var(--secondary-color);
   padding: 50px 0;
 }
 
 
 .footer-box h3, .footer-box h4{
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--white);
 }
 
 .footer-box h3{
@@ -1143,7 +1138,7 @@ header{
 
 .contacts a{
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
 }
 
 .contacts a:hover{
@@ -1178,11 +1173,11 @@ header{
 }
 
 .address-info{
-  color: #fff;
+  color: var(--white);
 }
 
 .newsletter{
-  color: #fff;
+  color: var(--white);
 }
 
 .newsletter p{
@@ -1220,7 +1215,7 @@ header{
   height: 100%;
   border-radius: 0 6px 6px 0;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--white);
   border: none;
   font-size: 16px;
   padding: 0 6px;
@@ -1232,12 +1227,8 @@ header{
   cursor: pointer;
 }
 
-
-
-
-
 .copy-social-section{
-  background-color: #111111;
+  background-color: var(--color-111);
   padding: 10px 0;
 }
 
@@ -1276,11 +1267,11 @@ header{
 	width: 40px;
 	height: 40px;
 	padding: 10px;
-	background-color: #1b1b1b;
+	background-color: var(--secondary-color);
 	border-radius: 6px;
   text-align: center;
   line-height: 1.2;
-  color: #fff;
+  color: var(--white);
   transition: all 0.3s ease;
 }
 
@@ -1290,5 +1281,5 @@ header{
 }
 
 .social-logo-box i{
-	color: #fff;
+	color: var(--white);
 }
